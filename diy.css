@@ -1,0 +1,74 @@
+html, body {
+  height: 98%;
+}
+
+body {
+  background-color: #fbbb37
+}
+
+#container {
+  height: 98%;
+	width: 90%;
+	margin: auto;
+}
+
+#main {
+  float: left;
+  width: 100%;
+  overflow: auto;
+	column-width: 7cm;
+	font-size: 15px;
+	font-family: Roboto
+}  
+
+h1 {
+  font-size: 20px;
+	font-variant: small-caps;
+	font-family: Roboto
+}
+
+h1:first-of-type {
+	margin-top: 0px;
+}
+
+@media print {
+  #main {
+    columns: 3;
+		font-size: 10pt;
+	}
+	.top {
+	  display: none;
+	}
+	#main {
+	  margin-top: 0px;
+	}
+}
+
+.btn {
+  width: 100%;
+	margin-bottom: 10px;
+}
+
+.top {
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.name {
+  text-transform: capitalize;
+	margin-left: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.category {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
